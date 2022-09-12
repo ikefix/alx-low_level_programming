@@ -1,5 +1,7 @@
-#include  <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
+
 /**
  * main - Entry point
  *
@@ -7,30 +9,24 @@
  */
 int main(void)
 {
-int i;
-int j;
-int k;
-for (i = 48; i <= 57; i++)
-{
-for (j = 48; j <= 57; j++)
-{
-for (k = 48; k <= 57; k++)
-{
-if (j > i && k > j)
-{
-putchar(i);
-putchar(j);
-putchar(k);
-if (i != 55)
-{
-putchar(44);
-putchar(32);
-}
-}
-}
-}
-}
-putchar('\n');
-return (0);
-}
+	int n;
+	int last;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	/* YOUR CODE GOES HERE */
+	last = n % 10;
+	if (last > 5)
+	{
+		printf("last digit of %d is %d and is greater than 5/n", n, last);
+	}
+	else if (last == 0)
+	{
+		printf("last digit of %d is %d and is 0/n", n, last);
+	}
+	else
+	{
+		printf("last digit of %d is %d and is less than 6 and not 0\n", n, last);
+	}
+	return (0);
 
