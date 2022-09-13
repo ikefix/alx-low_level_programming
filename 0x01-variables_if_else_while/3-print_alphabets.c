@@ -2,14 +2,17 @@
 /**
  * main -Entry point
  *
- * Return: ALWAYS SUCCESFUL
+ * Return: Always 0 (Success)
  */
-int main(0)
+int main(void)
 {
 char ch;
 for (ch = 'a'; ch <= 'z'; ch++)
 {
-	if (ch != 'e' && ch != 'q')
+putchar(ch);
+}
+for (ch = 'A'; ch <= 'Z'; ch++)
+{
 putchar(ch);
 }
 putchar('\n');
