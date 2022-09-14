@@ -1,23 +1,28 @@
 include "main.h"
+
 /**
- * Write a function that prints 10 times the alphabet
- *
- * RETURN: x10 a-z
- */
+  * main - check the code for Holberton School students
+  *
+  * return:void
+  */
 void print_alphabet_x10(void)
 {
-	int n, co;
+char c;
+int i = 0;
 
-	co = 0;
-
-	while (co < 10)
-	{
-		for (n = 'a'; n <= 'z'; n++)
-		{
-			_putchar(n);
-		}
-		co++;
-		_putchar('\n');
-	}
+while (i <= 9)
+{
+for (c = 'a'; c <= 'z'; c+
+{
+_putchar(c);
 }
+
+_putchar('\n');
+
+i++;
+
+}
+}
+
+
 	
