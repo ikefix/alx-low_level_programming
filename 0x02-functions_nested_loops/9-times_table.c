@@ -19,12 +19,14 @@ void times_table(void)
 			{
 				_putchar('0');
 			}else if (prod <= 9)
+
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(prod + '0');
 			}else
+
 			{
 				_putchar(',');
 				_putchar(' ');
@@ -34,4 +36,3 @@ void times_table(void)
 		}
 		_putchar('\n');
 	}
-}
