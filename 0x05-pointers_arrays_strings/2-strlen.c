@@ -5,15 +5,13 @@
  * @s: char input
  * Return: length of the input string
  */
-int _strlen(char *s)
+int main() 
 {
-	int i = 1, sum = 0;
-	char pl = s[0];
+	char s[] = "Programming is fun";
+	int i;
 
-	while (pl != '\0')
-	{
-		sum++;
-		pl = s[i++]
-	}
-	return (sum);
+	for (i = 0; s[i] != '\0'; ++i);
+
+	printf("Length of the string: %d", i);
+	return 0;
 }
