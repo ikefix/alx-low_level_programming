@@ -1,25 +1,18 @@
-#include <main.h>
-
+#include "main.h"
 /**
- * print_number - print interger
- * @n: value to be printed
- * Return: void
+ * print_numbers - this function print number 0 to 9
+ *
+ * Return: 0
+ *
  */
-
-void print_number(int n)
+void print_numbers(void)
 {
-	unsigned int m;
+	int i = '0';
 
-	if (n < 0) /*convert negative int*/
+	while (i <= '9')
 	{
-		_putchar('-');
-		m = -n;
+		_putchar(i);
+		i++;
 	}
-	else
-		m = n;
-
-	if (m / 10) /*remove the last digit*/
-		print_number(m / 10); /*recurse*/
-
-	_putchar(m % 10 + '0'); /*print last dig*/
+	_putchar('\n');
 }
