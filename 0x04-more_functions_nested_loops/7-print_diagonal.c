@@ -1,16 +1,15 @@
 #include "main.h"
-
 /**
- * print_diagonal - draw diagonal  line in a terminal
- * print newline if 0 or less is entered
- * @n: number of lines to be printed
+ * print_diagonal - print diagonal
  *
- * Return: void
+ * @n: parameter
+ *
+ * Return: 0
+ *
  */
-
 void print_diagonal(int n)
 {
-	int c, d;
+	int i, j;
 
 	c = 0;
 
@@ -27,6 +26,10 @@ void print_diagonal(int n)
 		c++;
 		n--;
 	}
-	if (c < 1
+	if (c < 1)
+	{
 		_putchar(10);
+	}
 }
+
+
