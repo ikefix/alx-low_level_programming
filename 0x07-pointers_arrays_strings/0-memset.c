@@ -1,10 +1,10 @@
 #include "main.h"
+
 /**
  * _memset - fills memory with a constant byte
- *
- * @s: pointer to memory area to fill
- * @n: the number of bytes to fill
- * @b: constant byte
+ * @s: memory to be filed
+ * @b: the constant byte
+ * @n: first n bytes to be filed
  *
  * Return: a pointer to the memory area @s
  */
