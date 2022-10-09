@@ -4,7 +4,6 @@
  * _strstr - finds first occurance of a substring in a string
  * @haystack: the string
  * @needle: the substring
- *
  * Return: a pointer to the begining of the substring
  */
 
