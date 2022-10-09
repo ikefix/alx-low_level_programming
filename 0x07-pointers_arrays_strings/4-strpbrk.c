@@ -1,26 +1,24 @@
 #include "main.h"
+
 /**
- * _strpbrk - finds string
- * @s: string to find stuff
- * @accept: accepting arrays
+ * _strpbrk - locates the first occurance in a string
+ * @s: the string
+ * @accept: the string to be located
  *
- * Return: returns new value
+ * Return: s
  */
+
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
-	int j;
+	int i, j;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; accept[j] != '\0'; j++)
 		{
 			if (s[i] == accept[j])
-			{
-				return (s + i);
-			}
+				return (&s[i]);
 		}
 	}
-	return(0);
+	return (0);
 }
-
