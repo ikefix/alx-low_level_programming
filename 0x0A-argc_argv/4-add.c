@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /*
- * main - add positive numbers
+ * main - a program that adds positive numbers
  * @argc: argument count
  * @argv: argument passed
  *
@@ -32,3 +32,4 @@ int main(int argc, char *argv[])
 	printf("%ld\n", sum);
 	return (0);
 }
+

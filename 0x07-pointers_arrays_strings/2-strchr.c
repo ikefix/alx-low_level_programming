@@ -27,6 +27,6 @@ char *_strchr(char *s, char c)
 			new = '\0';
 		}
 	}
-	return (new);
+	return (0);
 }
 
