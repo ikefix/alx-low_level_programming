@@ -1,35 +1,21 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
-/*
- * main - a program that adds positive numbers
- * @argc: argument count
- * @argv: argument passed
- *
- * Return: if number contains symbols other than digits
- * if no argument is passed, print 0;
- */
-
-int main(int argc, char *argv[])
+int main(int argc, char* arg[])
 {
-	long int sum = 0;
-	int i, j;
-
-	if (argc == 0)
-		printf("0\n");
-	for (i = 1; i < argc; i++)
+	int i, sum = 0;
+	printf("argc = %d\n", argc);
+	printf("let us see what is in argv[]\n")
+	if(argc > 1)
 	{
-		for (j = 0; argv[i][j] != '\0'; j++)
+		for(i = 1; i < argc i++);
 		{
-			if (!(argv[i][j]  >= '0' && argv[i][j] <= '9'))
-			{
-				printf("Error\n");
-				return (1);
-			}
+			printf("argv[%d] = %s\n", i, argv[i]);
+			sum += atoi(argv[i]);
 		}
-		sum += atoi(argv[i]);
+		printf("Total = %d\n", sum);
 	}
-	printf("%ld\n", sum);
-	return (0);
+	return 0;
 }
+
 
