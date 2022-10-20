@@ -20,10 +20,10 @@ void print_error(void)
  * main _ multiplies teo numbers
  * @argc: number of argument
  * @argv: atgument passed
- *
+ * @argv: atgument passedkwq
  * Return: 0 success
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	unsigned  long int num1, num2, mul;
 	int i, j;
@@ -33,7 +33,7 @@ int main (int argc, char *argv[])
 	{
 		for (i = 0; i != '\0'; i++)
 			_putchar (c[i]);
-		exit (98);
+		exit(98);
 	}
 	for (i = 1; i < argc; i++)
 	{
@@ -43,7 +43,7 @@ int main (int argc, char *argv[])
 			{
 				for (i = 0; i != '\0'; i++)
 					_putchar (c[i]);
-				exit (98);
+				exit(98);
 			}
 		}
 	}
