@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 /**
- * add_node - a function to add bode at the begining
+ * add_node - a function to add node at the begining
  *
  * @head: pointer
  *
